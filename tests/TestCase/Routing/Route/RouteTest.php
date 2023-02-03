@@ -274,7 +274,7 @@ class RouteTest extends TestCase
     /**
      * @return array
      */
-    public function provideMatchParseExtension(): array
+    public static function provideMatchParseExtension(): array
     {
         return [
             ['/foo/bar.xml', ['/foo/bar', 'xml'], ['xml', 'json', 'xml.gz']],
@@ -305,7 +305,7 @@ class RouteTest extends TestCase
     /**
      * @return array
      */
-    public function provideNoMatchParseExtension(): array
+    public static function provideNoMatchParseExtension(): array
     {
         return [
             ['/foo/bar', ['xml']],

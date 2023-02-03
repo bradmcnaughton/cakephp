@@ -258,7 +258,7 @@ class DateTest extends TestCase
      *
      * @return array
      */
-    public function timeAgoEndProvider(): array
+    public static function timeAgoEndProvider(): array
     {
         return [
             [
